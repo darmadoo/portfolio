@@ -1,0 +1,77 @@
+body,
+ul{
+	padding: 0;
+	margin: 0;
+}
+
+.nav a{
+	color: white;
+}
+
+.nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	text-align: center;
+}
+.nav ul{
+	list-style-type: none;
+	top: 5%;
+}
+.leftNavBar li{
+	display: inline-block;
+    padding: 10px 0px 10px 85px;
+}
+
+.rightNavBar li{
+	display: inline-block;
+    padding: 10px 85px 10px 0px;
+}
+.nav img{
+	width: 450px;
+}
+.menu-container{
+	display: inline-block;
+	position: relative;
+	top: 45px;
+}
+.leftNavBar,
+.rightNavBar{
+	position: absolute;
+}
+.leftNavBar{
+	left: 0px;
+}
+.rightNavBar{
+	right: 0px;
+}
+.header-container{
+	background: url(../images/lacma1.jpg) no-repeat top center fixed;
+	background-size: cover;
+	height: 100vh;
+}
+#about-container{
+	background-attachment: scroll;
+	background-size: cover;
+	text-align: center;
+}
+#about-container h1{
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 85px;
+    position: relative;
+    top: 20px;
+}
+.about-description{
+	font-family: 'Josefin Sans', sans-serif;	
+	font-size: 35px;
+    margin: 10px 200px;
+    letter-spacing: 6px;
+}
+.about-picture{
+	height: auto;
+    width: 17%;
+}
+#skills-container{
+	background: url(../images/lightbulb.jpg) no-repeat top center fixed;
+	background-size: cover;
+	height: 100vh;
+}
