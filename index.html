@@ -14,45 +14,181 @@
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link href="css/darmadoo.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
 	<!-- Start of header-container -->
-	<div class="header-container">
-		<div class="nav">
-			<ul class="leftNavBar">
-				<li><a ref="#">About</a></li>
-				<li><a ref="#">Skills</a></li>
+	<div class="header-container blue-background">
+		<div class="nav sensei-subheader">
+			<ul class="animated fadeInDown">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Skills</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
-			<img class="menu-container" src="images/Logo.png">
-			<ul class="rightNavBar menu-container"> 
-				<li><a ref="#">Projects</a></li>
-				<li><a ref="#">Contact Me!</a></li>
-			</ul>
+			<img alt="logo" class="animated fadeIn" src="images/temp.png">
+			<div class="header-intro animated fadeInRight"> 
+				<br>Hi!<br>
+				<br>I am Mark Darmadi!<br>
+				<br>Welcome!<br>
+			</div>
 		</div>
 	</div>	
 	<!-- End of header-container -->
-
 	<!-- Start of about-container -->
-	<section id="about-container">
-		<h1>About me</h1>
-		<img class="about-picture" src="images/me.png"> 
-		<p class="about-description">
-			I am a recent UCSD undergraduate passionate in front-end development,
-			as well as UX/UI design. In my pursuit of becoming a better computer
-			scientist, I aspire to write clean and readable code, at the same time
-			deliver an elegant and simplistic design, providing the perfect user
-			experience. 
-		</p>
-	</section>		
+	<div class="about-container white-background">
+		<div class="about-header sensei-title">About Me!</div>
+		<div class="about-description sensei-description">
+			<span>
+				I am a recent UCSD undergraduate passionate in 
+				front-end development, as well as UX/UI design.
+				In my pursuit of becoming a better computer scientist, 
+				I aspire to write clean and readable code, 
+				at the same time deliver an elegant and simplistic design, 
+				providing the perfect user experience.
+			</span>
+			<img alt="photo" class="about-photo" src="images/me.png">
+		</div>
+
+		<div>
+			<div class="about-icon">
+				<img alt="education" class="about-education photo-border" src="images/Education.png">
+				<img alt="experience" class="about-experience photo-border" src="images/Education.png">
+			</div>
+			<div class="edu-exp-header sensei-subheader"> 
+				<span>Education</span>
+				<span>Experience</span>
+			</div>
+			<div class="edu-exp-description sensei-description"> 
+				<span>
+					University of California San Diego (Class of 2016)<br>
+					GPA: 3.3 <br>
+					Major: B.S. Computer Science
+				</span>
+				<span>
+					Netsapiens:<br>
+					Software Engineer Intern<br>
+					De Anza College:<br>
+					Math/Science Tutor
+				</span>
+			</div>
+
+			<button type="button" class="btn btn-default download-resume sensei-description">
+				Download Resume
+			</button>
+		</div>
+
+	</div>		
 	<!-- End of about-container -->
 
 	<!-- Start of skills-container -->
-	<section id="skills-container">
-		
-	</section>
+	<div class="skills-container blue-background">
+		<span class="skills-header sensei-title">Skills</span>
+
+		<div>
+			<div class="skills-firstRow">
+				<div class="row-header1 sensei-header">
+					<span>Front-End</span>
+					<span>Back-End</span>
+				</div>
+				<div class="row-icon">
+					<div class="group-icon1">
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="group-icon2">
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row-description">
+					<div class="group1-description1 sensei-description">
+						<span>HTML5</span>
+						<span>CSS</span>
+						<span>JavaScript</span>
+					</div>
+
+					<div class="group1-description2 sensei-description">
+						<span>Java</span>
+						<span>Python</span>
+						<span>C++</span>
+					</div>
+				</div> 
+			</div>
+			<div class="skills-secondRow">
+				<div class="row-header2 sensei-header">
+					<span>Tools</span>
+					<span>Design</span>
+				</div>
+				<div class="row-icon">
+					<div class="group-icon1">
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+					</div>
+					<div class="group-icon2">
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+						<div class="circle-box">
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row-description">
+					<div class="group2-description1 sensei-description">
+						<span>Git</span>
+						<span> Github</span>
+						<span>Eclipse</span>
+					</div>
+
+					<div class="group2-description2 sensei-description">
+						<span>Adobe PS</span>
+						<span>Adobe AI</span>
+						<span>Adobe XD</span>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
 	<!-- End of skills-container -->
+
+	<!-- End of projects-container -->
+	<div class="projects-container white-background">
+		<span class="projects-header sensei-title">Projects</span>
+		<div class="project-content"> 
+			<div class="project-object">
+				<div class="project-pic">Project 1</div>
+					Title (Link)<br><br>
+					Technology<br><br>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+			</div>
+		</div>
+	</div>
+	<!-- End of projects-container -->
 
 </body>
 
