@@ -15,30 +15,37 @@ ul{
 }
 .white-background{
 	background-color: #D8D6D7;
-	/*height: 100vh;*/
 	color: #4D576A;
 }
 .sensei-title{
 	font-family: sensei;
+	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 6em;
 }
 .sensei-description{
 	font-family: sensei;
+	/*font-family: 'Cabin', sans-serif;*/
 	font-size: 1.5em;
 }
 .sensei-longDes{
 	font-family: sensei;
+	/*font-family: 'Cabin', sans-serif;*/
 	font-size: 1em;
 }
 .sensei-header{
 	font-family: sensei;
+	/*font-family: 'Raleway', sans-serif;*/	
 	font-size: 3.5em;
 }
 .sensei-subheader{
 	font-family: sensei;
+	/*font-family: 'Raleway', sans-serif;*/
 	font-size: 4em;
 }
-
+/*
+font-family: 'Cabin', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 /********** LANDING ***********/
 .header-container{
 	height: 100vh;
@@ -126,8 +133,6 @@ ul{
 	position: relative;
     left: 25%;
     padding-right: 19%;
-}
-.edu-exp-description{
 }
 .edu-exp-description span{
 	display: inline-block;
