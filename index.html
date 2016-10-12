@@ -10,11 +10,12 @@
 	<meta name="HandheldFriendly" content="true">
 
 	<title>Welcome to Darmadoo!</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css">
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
 	<link href="css/darmadoo.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Raleway:300" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
 				<li><a href="#">Projects</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-			<img alt="logo" class="animated fadeIn" src="images/temp.png">
+			<img alt="logo" class="animated fadeIn" src="images/branding.png">
 			<div class="header-intro animated fadeInRight"> 
 				<br>Hi!<br>
 				<br>I am Mark Darmadi!<br>
@@ -36,7 +37,7 @@
 		</div>
 	</div>	
 	<!-- End of header-container -->
-	
+
 	<!-- Start of about-container -->
 	<div class="about-container white-background">
 		<div class="about-header sensei-title">About Me!</div>
@@ -53,21 +54,20 @@
 		</div>
 
 		<div>
-			<div class="about-icon">
+			<div class="about-education">
 				<img alt="education" class="about-education photo-border" src="images/Education.png">
-				<img alt="experience" class="about-experience photo-border" src="images/Education.png">
-			</div>
-			<div class="edu-exp-header sensei-subheader"> 
-				<span>Education</span>
-				<span>Experience</span>
-			</div>
-			<div class="edu-exp-description sensei-description"> 
-				<span>
+				<span class="edu-exp-header sensei-subheader">Education</span>
+				<span class="edu-exp-description sensei-description">
 					University of California San Diego (Class of 2016)<br>
 					GPA: 3.3 <br>
 					Major: B.S. Computer Science
 				</span>
-				<span>
+			</div>
+
+			<div class="about-experience">
+				<img alt="experience" class="about-experience photo-border" src="images/Education.png">
+				<span class="edu-exp-header sensei-subheader">Experience</span>
+				<span class="edu-exp-description sensei-description">
 					Netsapiens:<br>
 					Software Engineer Intern<br>
 					De Anza College:<br>
@@ -75,9 +75,11 @@
 				</span>
 			</div>
 
-			<button type="button" class="btn btn-default download-resume sensei-description">
-				Download Resume
-			</button>
+			<div class="button-container">
+				<button type="button" class="btn btn-default download-resume sensei-description">
+					Download Resume
+				</button>
+			</div>
 		</div>
 
 	</div>		
@@ -86,93 +88,75 @@
 	<!-- Start of skills-container -->
 	<div class="skills-container blue-background">
 		<span class="skills-header sensei-title">Skills</span>
-
-		<div>
-			<div class="skills-firstRow">
-				<div class="row-header1 sensei-header">
-					<span>Front-End</span>
-					<span>Back-End</span>
+		<div class="skills-frontEnd">
+			<span class="sensei-header">Front-End</span>
+			<div>
+				<div class="circle-box">
+					<div id="html-circle"></div>
+					<span class="sensei-description">HTML5</span>
 				</div>
-				<div class="row-icon">
-					<div class="group-icon1">
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-					</div>
-					<div class="group-icon2">
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-					</div>
+				<div class="circle-box">
+					<div id="css-circle"></div>
+					<span class="sensei-description">CSS</span>
 				</div>
-				<div class="row-description">
-					<div class="group1-description1 sensei-description">
-						<span>HTML5</span>
-						<span>CSS</span>
-						<span>JavaScript</span>
-					</div>
-
-					<div class="group1-description2 sensei-description">
-						<span>Java</span>
-						<span>Python</span>
-						<span>C++</span>
-					</div>
-				</div> 
+				<div class="circle-box">
+					<div id="js-circle"></div>
+					<span class="sensei-description">JavaScript</span>
+				</div>
 			</div>
-			<div class="skills-secondRow">
-				<div class="row-header2 sensei-header">
-					<span>Tools</span>
-					<span>Design</span>
-				</div>
-				<div class="row-icon">
-					<div class="group-icon1">
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-					</div>
-					<div class="group-icon2">
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-box">
-							<div class="circle"></div>
-						</div>
-					</div>
-				</div>
-				<div class="row-description">
-					<div class="group2-description1 sensei-description">
-						<span>Git</span>
-						<span> Github</span>
-						<span>Eclipse</span>
-					</div>
+		</div>
 
-					<div class="group2-description2 sensei-description">
-						<span>Adobe PS</span>
-						<span>Adobe AI</span>
-						<span>Adobe XD</span>
-					</div>
-				</div> 
+		<div class="skills-backEnd">
+			<span class="sensei-header">Back-End</span>
+			<div>
+				<div class="circle-box">
+					<div id="java-circle"></div>
+					<span class="sensei-description">Java</span>
+				</div>
+				<div class="circle-box">
+					<div id="python-circle"></div>
+					<span class="sensei-description">Python</span>
+				</div>
+				<div class="circle-box">
+					<div id="c-circle"></div>
+					<span class="sensei-description">C++</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="skills-tools">
+			<span class="sensei-header">Tools</span>
+			<div>
+				<div class="circle-box">
+					<div id="git-circle"></div>
+					<span class="sensei-description">Git</span>
+				</div>
+				<div class="circle-box">
+					<div id="github-circle"></div>
+					<span class="sensei-description">Github</span>
+				</div>
+				<div class="circle-box">
+					<div id="eclipse-circle"></div>
+					<span class="sensei-description">Eclipse</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="skills-design">
+			<span class="sensei-header">Design</span>
+			<div>
+				<div class="circle-box">
+					<div id="xd-circle"></div>
+					<span class="sensei-description">Adobe XD</span>
+				</div>
+				<div class="circle-box">
+					<div id="ps-circle"></div>
+					<span class="sensei-description">Adobe PS</span>
+				</div>
+				<div class="circle-box">
+					<div id="ai-circle"></div>
+					<span class="sensei-description">Adobe Illustrator</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -195,38 +179,42 @@
 				</div>
 
 				<div class="project-object">
-				<div class="left-half">
-					<div class="project-description sensei-description">
-						<span class="project-title">Title (Link)</span><br><br>
-						<span class="project-tech">Technology</span><br><br>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					<div class="left-half">
+						<div class="project-description sensei-description">
+							<span class="project-title">Title (Link)</span><br><br>
+							<span class="project-tech">Technology</span><br><br>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+						</div>
 					</div>
-				</div>
-				<div class="right-half">
-					<div class="project-pic">Project 1</div>
-				</div>
-
-				<div class="left-half">
-					<div class="project-pic">Project 1</div>
-				</div>
-				<div class="right-half">
-					<div class="project-description sensei-description">
-						<span class="project-title">Title (Link)</span><br><br>
-						<span class="project-tech">Technology</span><br><br>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					<div class="right-half">
+						<div class="project-pic">Project 1</div>
 					</div>
 				</div>
 
 				<div class="project-object">
-				<div class="left-half">
-					<div class="project-description sensei-description">
-						<span class="project-title">Title (Link)</span><br><br>
-						<span class="project-tech">Technology</span><br><br>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+					<div class="left-half">
+						<div class="project-pic">Project 1</div>
+					</div>
+					<div class="right-half">
+						<div class="project-description sensei-description">
+							<span class="project-title">Title (Link)</span><br><br>
+							<span class="project-tech">Technology</span><br><br>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+						</div>
 					</div>
 				</div>
-				<div class="right-half">
-					<div class="project-pic">Project 1</div>
+
+				<div class="project-object">
+					<div class="left-half">
+						<div class="project-description sensei-description">
+							<span class="project-title">Title (Link)</span><br><br>
+							<span class="project-tech">Technology</span><br><br>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+						</div>
+					</div>
+					<div class="right-half">
+						<div class="project-pic">Project 1</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -236,9 +224,20 @@
 	<!-- Start of Contact-container -->
 	<div class="contact-container blue-background"> 
 		<span class="contact-header sensei-title">Contact Me</span>
+		<div class="contact-row">
+			<a href="#"><img src="images/svg/github-c.svg" alt="github"></a>
+			<a href="#"><img src="images/svg/linkedin-c.svg" alt="linkedin"></a>
+			<a href="#"><img src="images/svg/mailbox-c.svg" alt="mailbox"></a>
+		</div>
 	</div>
 	<!-- End of Contact-container -->
 
+
+	<script src="node_modules/progressbar.js/dist/progressbar.js"></script>
+	<script src="node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
+	<script type="text/javascript" src="node_modules/jquery.min.js"></script>
+	<script type="text/javascript" src="node_modules/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/circle.js"></script>
 </body>
 
 </html>

@@ -18,37 +18,37 @@ ul{
 	color: #4D576A;
 }
 .sensei-title{
-	font-family: sensei;
-	/*font-family: 'Raleway', sans-serif;*/
+	/*font-family: sensei;*/
+	font-family: 'Raleway', sans-serif;
 	font-size: 6em;
 }
 .sensei-description{
-	font-family: sensei;
-	/*font-family: 'Cabin', sans-serif;*/
+	/*font-family: sensei;*/
+	font-family: 'Cabin', sans-serif;
 	font-size: 1.5em;
 }
 .sensei-longDes{
-	font-family: sensei;
-	/*font-family: 'Cabin', sans-serif;*/
+	/*font-family: sensei;*/
+	font-family: 'Cabin', sans-serif;
 	font-size: 1em;
 }
 .sensei-header{
-	font-family: sensei;
-	/*font-family: 'Raleway', sans-serif;*/	
+	/*font-family: sensei;*/
+	font-family: 'Raleway', sans-serif;	
 	font-size: 3.5em;
 }
 .sensei-subheader{
-	font-family: sensei;
-	/*font-family: 'Raleway', sans-serif;*/
+	/*font-family: sensei;*/
+	font-family: 'Raleway', sans-serif;
 	font-size: 4em;
 }
-/*
-font-family: 'Cabin', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
 /********** LANDING ***********/
 .header-container{
 	height: 100vh;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .nav{
 	text-align: center;
@@ -63,15 +63,13 @@ font-family: 'Raleway', sans-serif;
 } 
 .nav a{
 	color: #D8D6D7;
-    text-shadow: 2px 2px black;
-    cursor: pointer;
+	cursor: pointer;
 }
 .nav a:hover{
 	color: #337ab7;
 }
 .header-intro{
 	color: #D8D6D7;
-    text-shadow: 2px 2px black;
     max-width: 80%;
     left: 15%;
     position: relative;
@@ -84,7 +82,6 @@ font-family: 'Raleway', sans-serif;
 	float: left;
 	position: relative;
 	left: 150px;
-	top: 150px;
 	-webkit-animation-duration: 5s;
 }
 
@@ -110,49 +107,49 @@ font-family: 'Raleway', sans-serif;
 .about-photo{
     width: 250px;
     position: relative;
-    left: 30%;
+    left: 42%;
     margin-top: -250px;
-}
-.about-education{
-	margin-left: 25%;
-}
-.about-experience{
-    margin-left: 20%;
 }
 .about-icon{
 	padding-top: 75px;
 }
+.about-education,
+.about-experience{
+	display: inline-block;
+    width: 49%;
+    text-align: center;
+}
 .photo-border{
 	width: 250px;
     position: relative;
-    display: inline;
     border: 1px solid black;
     border-radius: 50%;
 }
-.edu-exp-header span{
+.edu-exp-header{
+	display: block;
 	position: relative;
-    left: 25%;
-    padding-right: 19%;
 }
-.edu-exp-description span{
-	display: inline-block;
-    max-width: 400px;
+.edu-exp-description{
+	display: block;
     text-align: center;
     position: relative;
-    left: 21%;
-    margin-right: 17%;
     margin-top: 15px;
 }
 .download-resume{
     height: 105px;
     width: 300px;
-    position: relative;
-    left: 42%;
-    margin: 100px 0;
     border-radius: 10px;
+}
+.button-container{
+	text-align:center;
+	margin:auto;
+	padding: 50px;
 }
 
 /********** SKILLS ***********/
+.skills-container{
+	background-attachment: scroll;
+}
 .skills-header,
 .contact-header,
 .projects-header{
@@ -160,23 +157,24 @@ font-family: 'Raleway', sans-serif;
 	text-align: center;
 	padding-top: 50px;
 }
-.row-header1 span{
-    padding-left: 22%;
-    margin-right: 11%;
-}
-.group-icon1{
+.skills-frontEnd,
+.skills-backEnd,
+.skills-tools,
+.skills-design{
 	display: inline-block;
-	padding: 10px 10%;
-}
-.group-icon2{
-	display: inline-block;
+	width: 49%;
+	text-align: center;
+	padding: 50px 0;
 }
 .circle-box{
 	width: 150px;
 	height: 150px;
 	margin: 35px;
 	display: inline-block;
-
+}
+.circle-box span{
+	position: relative;
+	top: 25px;
 }
 .circle{
 	width: 100%;
@@ -185,37 +183,6 @@ font-family: 'Raleway', sans-serif;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	background: #D8D6D7;
-}
-.group1-description1,
-.group2-description1{
-	display: inline-block;
-	padding: 0px 10%;
-}
-.group1-description2,
-.group2-description2{
-	display: inline-block;
-}
-.group1-description1 span{
-	margin: 0 70px 0 90px;
-}
-.group1-description2 span{
-	margin: 0 85px 0 85px;
-}
-.row-header2{
-    padding-top: 50px;
-}
-.row-header2 span{
-    padding-left: 25%;
-    margin-right: 13%;
-}
-.group2-description1 span{
-    margin: 0 62px 0 100px
-}
-.group2-description2 span{
-	margin: 0 45px 0 90px;
-}
-.row-description{
-	padding-bottom: 75px;
 }
 
 /********** SKILLS ***********/
@@ -260,4 +227,16 @@ font-family: 'Raleway', sans-serif;
 	max-width: 800px;	
 	position: relative;
 	left: 10%;
+}
+/********** CONTACT ***********/
+.contact-container{
+	background-attachment: fixed;
+}
+.contact-row{
+	text-align: center;
+}
+.contact-row img{
+	width: 8%;
+	margin: 50px;
+
 }
