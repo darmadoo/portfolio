@@ -1,0 +1,116 @@
+/*@media (min-width: 1000px) and (max-width: 1223px) {
+    .landing-container span {
+        top: 8vw;
+    }
+    .about-experience,
+    .about-education,
+    .about-interest {
+        display: block;
+        width: 100%;
+    }
+}
+@media (min-width: 850px) and (max-width: 999px) {
+    .nav-size {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+    }
+    .landing-container span {
+        top: 7vw;
+    }
+    .about-experience,
+    .about-education,
+    .about-interest {
+        display: block;
+        width: 100%;
+    }
+}
+*/
+/* Iphone 6 and 6+ and android phones */ 
+@media only screen and (min-device-width: 360px) and (max-device-width: 767px){
+    .side-bar{
+        display: none;
+    }
+    .nav li{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        display: block;
+        padding: 5px 0px;
+        list-style: none;
+    }
+    .landing-container span {
+        top: 11vw;
+        font-size: 0.8em;
+    }
+    .inner-circle,
+    .outer-circle,
+    .last-circle{
+        left: calc(50% - 19vh);
+    }
+    .inner-circle{
+        margin: 4.5%;
+        width: 32vh;
+        height: 32vh;
+    }
+    .outer-circle{
+        width: 35vh;
+        height: 35vh;
+        margin: 2.5%;
+    }
+    .last-circle{
+        width: 38vh;
+        height: 38vh;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .side-bar{
+        display: none;
+    }
+    .nav li{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        display: block;
+        padding: 5px 0px;
+        list-style: none;
+    }
+    .landing-container span {
+        top: 12vw;
+    }
+    .inner-circle,
+    .outer-circle,
+    .last-circle{
+        left: calc(50% - 19vh);
+    }
+    .inner-circle{
+        margin: 4.5%;
+        width: 32vh;
+        height: 32vh;
+    }
+    .outer-circle{
+        width: 35vh;
+        height: 35vh;
+        margin: 2.5%;
+    }
+    .last-circle{
+        width: 38vh;
+        height: 38vh;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .side-bar{
+        display: none;
+    }
+    .nav li{
+        display: block;
+        list-style: none;
+    }
+}
+/* Laptops */
+@media only screen and (min-device-width: 1025px){
+    .nav li {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        list-style: none;
+    }
+}

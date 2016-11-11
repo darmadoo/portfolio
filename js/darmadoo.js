@@ -1,53 +1,45 @@
 $(document).ready(function(){
-	if($(window).width() <= 1000){
-			$.scrollify.disable();
-	}
     // $("html,body").animate({ scrollTop: 0 }, "fast");
 	$(function() {
-        $.scrollify({
-            section : ".panel",
-            interstitialSection : ".footer",
-            easing: "easeOutExpo",
-            scrollbars: false,
-            before:function(i,panels) {
-		      var ref = panels[i].attr("data-section-name");
+		if($(window).width() > 1024){
+	        $.scrollify({
+	            section : ".panel",
+	            interstitialSection : ".footer",
+	            easing: "easeOutExpo",
+	            scrollbars: false,
+	            before:function(i,panels) {
+			      var ref = panels[i].attr("data-section-name");
 
-		      $(".sideBar .active").removeClass("active");
+			      $(".sideBar .active").removeClass("active");
 
-		      $(".sideBar").find("a[href=\"#" + ref + "\"]").addClass("active");
-		    },
-		    afterRender:function() {
-		      var pagination = "<ul class=\"sideBar\">";
-		      var activeClass = "";
-		      $(".panel").each(function(i) {
-		      	var name = $(this).attr("data-section-name");
-		        activeClass = "";
-		        if(i===0) {
-		          activeClass = "active";
-		        }
-		        if((name != "projects2") && (name != "projects3") &&(name != "projects4") && (name != "landing")){
-		        	pagination += "<li><a class=\"" + activeClass + " header-size\"  href=\"#" + $(this).attr("data-section-name") 
-		        				+ "\">" + name[0].toUpperCase() +"</a></li>";
-		        }
-		        
-		      });
+			      $(".sideBar").find("a[href=\"#" + ref + "\"]").addClass("active");
+			    },
+			    afterRender:function() {
+			      var pagination = "<ul class=\"sideBar\">";
+			      var activeClass = "";
+			      $(".panel").each(function(i) {
+			      	var name = $(this).attr("data-section-name");
+			        activeClass = "";
+			        if(i===0) {
+			          activeClass = "active";
+			        }
+			        if((name != "projects2") && (name != "projects3") &&(name != "projects4") && (name != "landing")){
+			        	pagination += "<li><a class=\"" + activeClass + " header-size\"  href=\"#" 
+			        			   + $(this).attr("data-section-name") + "\">" + name[0].toUpperCase() +"</a></li>";
+			        }
+			        
+			      });
 
-		      pagination += "</ul>";
+			      pagination += "</ul>";
 
-		      $(".side-bar").append(pagination);
-		    }
-        });
+			      $(".side-bar").append(pagination);
+			    }
+	        });
 
 		    $(".sideBar a").on("click",$.scrollify.move);
 			$(".navBar a").on("click",$.scrollify.move);
-    });
-
-	$(window).resize(function() {
-		if($(window).width() <= 1000){
-			$.scrollify.disable();
 		}
-	});
-	
+    });
 
     $(function(){
         $("#typed-intro").typed({
@@ -57,13 +49,13 @@ $(document).ready(function(){
 			backSpeed: 20
         });
     });
+
     var header = $('.header-wrapper').waypoint({
 	    handler: function(direction) {
 	      	$(this.element).css("visibility", "visible");	    
 	      },
 	    offset: "50%"
 	})
-
 
     var aboutStart = $('.about-start').waypoint({
 	    handler: function(direction) {
@@ -82,8 +74,8 @@ $(document).ready(function(){
           $(".about-arrowBody").addClass("arrow2");
           
 	    },
-	    offset: "100%"
-	  })
+	    offset: "30%"
+	})
     var projectsWrapper = $('.projects-start').waypoint({
 	    handler: function(direction) {
 	      $(this.element).addClass("projects-cover", setTimeout(function(){
@@ -100,8 +92,8 @@ $(document).ready(function(){
           $(".projects-arrowBody").addClass("arrow2");
           
 	    },
-	    offset: "100%"
-	  })
+	    offset: "30%"
+	})
     var projects2Wrapper = $('.projects-end').waypoint({
 	    handler: function(direction) {
 	      $(this.element).addClass("projects-cover", setTimeout(function(){
@@ -115,6 +107,6 @@ $(document).ready(function(){
           $(".projects-arrowBody").css("visibility", "visible");
           $(".projects-arrowBody").addClass("arrow2");
 	    },
-	    offset: "100%"
-	  })
+	    offset: "30%"
+	})
 });
