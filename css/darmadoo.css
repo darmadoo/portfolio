@@ -172,18 +172,18 @@ body {
 }
 .edu-exp-interest-container {
     padding-top: 15px;
+    text-align: center;
 }
 .about-interest,
 .about-education,
 .about-experience {
     display: inline-block;
     width: 33%;
-    text-align: center;
 }
 .me-photo-border {
     width: 200px;
     position: relative;
-    border: 1px solid white;
+    box-shadow: 3px 3px 5px 6px #ccc;
     border-radius: 50%;
 }
 .photo-border {
@@ -198,7 +198,7 @@ body {
 }
 .download-resume {
     height: 5vh;
-    width: 25vw;
+    width: 250px;
     border-radius: 10px;
     font-size: 1em;
 }
@@ -212,7 +212,6 @@ body {
 .skills-container {
     position: relative;
     z-index: 1;
-    height: 100vh;
 }
 .skills-wrapper {
     visibility: hidden;
@@ -271,6 +270,8 @@ body {
     display: inline-block;
     position: relative;
     text-align: center;
+    background-color: #911F27;
+    padding-bottom: 30px;
 }
 .project-pic img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

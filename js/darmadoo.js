@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // $("html,body").animate({ scrollTop: 0 }, "fast");
 	$(function() {
 		if($(window).width() > 1024){
 	        $.scrollify({
