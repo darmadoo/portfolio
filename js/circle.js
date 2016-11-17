@@ -115,22 +115,30 @@ window.onload = function onLoad() {
 
   var skillsWrapper = $('.skills-start').waypoint({
       handler: function(direction) {
-        $(this.element).addClass("skills-cover", setTimeout(function(){
-            $(".skills-wrapper").css("visibility", "visible");
-            $(".skills-wrapper").addClass("animated fadeInDown", setTimeout(function(){
-            animateCircle();  
-          }, 500));
-        }, 1500));
-        $(".skills-cover-intro").css("visibility", "visible");
+        if($(window).width() > 1024){
+          $(this.element).addClass("skills-cover", setTimeout(function(){
+              $(".skills-wrapper").css("visibility", "visible");
+              $(".skills-wrapper").addClass("animated fadeInDown", setTimeout(function(){
+              animateCircle();  
+            }, 500));
+          }, 1500));
+          $(".skills-cover-intro").css("visibility", "visible");
           $(".skills-cover-intro").addClass("animated flipInX");
           $(".skills-arrowTop").css("visibility", "visible");
           $(".skills-arrowTop").addClass("arrow1");
           $(".skills-arrowBody").css("visibility", "visible");
           $(".skills-arrowBody").addClass("arrow2");
+        }
+        else{
+          $(".skills-wrapper").css("visibility", "visible");
+              animateCircle();  
+            //   $(".skills-wrapper").addClass("animated fadeIn", setTimeout(function(){
+              
+            // }, 500));
+        }
       },
-      offset: "100%"
+      offset: "30%"
     })
-
   
 };
 

@@ -13,46 +13,51 @@
   -o-animation-duration: 4s;
   -ms-animation-duration: 4s;
   animation-name: welcome;
+  -webkit-animation-name: welcome;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
 @keyframes welcome{
-  0%{
-    opacity: 1;
-  }
-  25%{
-    opacity: 1;
-  }
-  80%{
+  0%, 25%, 80%{
     opacity: 1;
   }
   100%{
-    /*opacity: 1;*/
     opacity: 0;
     z-index: 0;
     visibility: hidden;
   }
 }
+
+@-webkit-keyframes welcome{
+  0%, 25%, 80%{
+    -webkit-opacity: 1;
+  }
+  100%{
+    -webkit-opacity: 0;
+    -webkit-z-index: 0;
+    -webkit-visibility: hidden;
+  }
+}
 .welcome-cover{
   left: 0;
-    line-height: 200px;
-    margin: auto;
-    margin-top: -100px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    font-size: 8vw;
-    letter-spacing: 4.5vw;
-    left: 2vw;
-    color: black;
-    z-index: 9;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-size: 8vw;
+  letter-spacing: 4.5vw;
+  left: 2vw;
+  color: black;
+  z-index: 9;
   font-family: 'Dosis';
   font-weight: 500;
-    animation-delay: 1.8s;
-    -moz-animation-delay: 1.8s;
-    -webkit-animation-delay: 1.8s;
-    -ms-animation-delay: 1.8s;
-    -o-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  -ms-animation-delay: 1.8s;
+  -o-animation-delay: 1.8s;
 }
 .cover-bar{
   position: absolute;
@@ -61,51 +66,30 @@
     background-color: #911F27;
 }
 .one{
-  animation-duration: 0.2s;
-  -webkit-animation-duration: 0.2s;
-  -moz-animation-duration: 0.2s;
-  -ms-animation-duration: 0.2s;
-  -o-animation-duration: 0.2s;
-  animation-delay:0.5s;
-  -webkit-animation-delay:0.5s;
-  -moz-animation-delay:0.5s;
-  -ms-animation-delay:0.5s;
-  -o-animation-delay:0.5s;
-  animation-name: swipe;
-  animation-timing-function: ease;
+  -webkit-animation: swipe 0.2s ease 0.5s;
+  animation: swipe 0.2s ease 0.5s;
+  -ms-animation: swipe 0.2s ease 0.5s;
+  -o-animation: swipe 0.2s ease 0.5s;
+  -moz-animation: swipe 0.2s ease 0.5s;
   animation-fill-mode: forwards;
   left: 0;
 }
 .three{
-  animation-duration: 0.2s;
-  -webkit-animation-duration: 0.2s;
-  -moz-animation-duration: 0.2s;
-  -ms-animation-duration: 0.2s;
-  -o-animation-duration: 0.2s;
-  animation-delay:1s;
-  -webkit-animation-delay:1s;
-  -moz-animation-delay:1s;
-  -ms-animation-delay:1s;
-  -o-animation-delay:1s;
-  animation-name: swipe;
-  animation-timing-function: ease;
+  animation: swipe 0.2s ease 1s;
+  -webkit-animation: swipe 0.2s ease 1s;
+  -ms-animation: swipe 0.2s ease 1s;
+  -o-animation: swipe 0.2s ease 1s;
+  -moz-animation: swipe 0.2s ease 1s;
   animation-fill-mode: forwards;
   left: 40%;
 }
 
 .five{
-  animation-duration: 0.2s;
-  -webkit-animation-duration: 0.2s;
-  -moz-animation-duration: 0.2s;
-  -ms-animation-duration: 0.2s;
-  -o-animation-duration: 0.2s;
-  animation-delay:0.5s;
-  -webkit-animation-delay:0.5s;
-  -moz-animation-delay:0.5s;
-  -ms-animation-delay:0.5s;
-  -o-animation-delay:0.5s;
-  animation-name: swipe;
-  animation-timing-function: ease-out;
+  animation: swipe 0.2s ease-out 0.5s;
+  -webkit-animation: swipe 0.2s ease-out 0.5s;
+  -ms-animation: swipe 0.2s ease-out 0.5s;
+  -o-animation: swipe 0.2s ease-out 0.5s;
+  -moz-animation: swipe 0.2s ease-out 0.5s;
   animation-fill-mode: forwards;
   left: 80%;
 }
@@ -209,9 +193,9 @@
     -webkit-border-radius: 180px;
     -moz-border-radius: 180px;
     border-radius: 50%;
-  	-webkit-animation:turning_acw 3s infinite;
-  	-moz-animation:turning_acw 3s infinite;
-  	animation:turning_cw 5s infinite;
+  	-webkit-animation:turning_cw 4s infinite;
+  	-moz-animation:turning_cw 4s infinite;
+  	animation:turning_cw 4s infinite;
   	animation-timing-function: linear;
   	left: calc(50% - 17.5vw);
 }
@@ -229,14 +213,14 @@
   -webkit-border-radius: 180px;
   -moz-border-radius: 180px;
   border-radius: 50%;
-  -webkit-animation: turning_acw 3s infinite;
-  -moz-animation: turning_acw 3s infinite;
+  -webkit-animation: turning_acw 5s infinite;
+  -moz-animation: turning_acw 5s infinite;
   animation: turning_acw 5s infinite;
   animation-timing-function: linear;
   left: calc(50% - 17.5vw);
 }
 .last-circle{
-	border: 0.5vw solid #ECEBFA;
+	  border: 0.5vw solid #ECEBFA;
     border-bottom-color: #630A10;
     border-right-color: #630A10;
     -webkit-transform: rotate(360deg);
@@ -250,22 +234,30 @@
     border-radius: 50%;
     -webkit-animation: turning_acw 3s infinite;
     -moz-animation: turning_acw 3s infinite;
-    animation: turning_acw 4s infinite;
+    animation: turning_acw 3s infinite;
     animation-timing-function: linear;
     left: calc(50% - 17.5vw);
 }
 @keyframes turning_cw {
   	0%{
-  		transform: rotate(0deg); }
+  		transform: rotate(0deg); 
+      -webkit-transform: rotate(0deg); 
+    }
   	100%{
-  		transform: rotate(360deg); }
+  		transform: rotate(360deg); 
+      -webkit-transform: rotate(360deg); 
+    }
 }
 
 @keyframes turning_acw {
   	0%{
-  		transform: rotate(360deg); }
+  		transform: rotate(360deg); 
+      -webkit-transform: rotate(360deg); 
+    }
   	100%{
-  		transform: rotate(0deg); }
+  		transform: rotate(0deg); 
+      -webkit-transform: rotate(0deg); 
+    }
 }
 .projects-cover,
 .skills-cover,

@@ -6,12 +6,16 @@ ul {
 body {
     background-color: #ECEAE7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
     color: #911F27;
     font-family: 'Cabin', sans-serif;
-    font-size: 20px;
+    font-size: 2vh;
 }
 .panel {
+    height: 100vh;
     background-color: #ECEAE7;
+    padding-bottom: 20px;
+    margin-bottom: 0;
 }
 .side-bar{
   z-index: 2;
@@ -41,11 +45,11 @@ body {
 
 .title {
     font-family: 'Raleway', sans-serif;
-    font-size: 4em;
+    font-size: 7vh;
 }
 .header-size {
     font-family: 'Raleway', sans-serif;
-    font-size: 3em;
+    font-size: 5vh;
 }
 .sideBar a.active {
     text-decoration: line-through;
@@ -59,6 +63,8 @@ body {
 	height: 100vh;
     position: relative;
     z-index: 4;
+    /*background-repeat: no-repeat;*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #911F27), color-stop(100%, #ECEAE7));*/
 }
 .header-wrapper {
     visibility: hidden;
@@ -118,7 +124,8 @@ body {
 .about-container {
     z-index: 1;
     position: relative;
-    padding: 20px 0;
+    padding-bottom: 20px;
+    height: 100vh;
 }
 .projects-cover-intro,
 .skills-cover-intro,
@@ -164,7 +171,7 @@ body {
 }
 .about-description {
     position: relative;
-    line-height: 3;
+    line-height: 2.5;
     letter-spacing: 1px;
     max-width: 1000px;
     text-align: center;
@@ -181,13 +188,15 @@ body {
     width: 33%;
 }
 .me-photo-border {
-    width: 200px;
+    /*width: 200px;*/
+    width: 20vh;
     position: relative;
     box-shadow: 3px 3px 5px 6px #ccc;
     border-radius: 50%;
 }
 .photo-border {
-    width: 150px;
+    /*width: 150px;*/
+    width: 10vh;
     position: relative;
     border: 1px solid white;
     border-radius: 50%;
@@ -212,6 +221,7 @@ body {
 .skills-container {
     position: relative;
     z-index: 1;
+    height: 100vh;  
 }
 .skills-wrapper {
     visibility: hidden;
@@ -232,10 +242,10 @@ body {
     display: inline-block;
     width: 49%;
     text-align: center;
-    padding: 50px 0;
+    padding: 2vh 0 3vh 0;
 }
 .circle-box {
-    width: 150px;
+    width: 15vh;
     height: 150px;
     margin: 35px;
     display: inline-block;
@@ -257,6 +267,7 @@ body {
 .projects-container {
     z-index: 1;
     position: relative;
+    height: 100vh;
 }
 .projects-wrapper {
     visibility: hidden;
@@ -267,7 +278,6 @@ body {
 .project-pic {
     padding-top: 40px;
     height: 50%;
-    display: inline-block;
     position: relative;
     text-align: center;
     background-color: #911F27;
@@ -275,7 +285,7 @@ body {
 }
 .project-pic img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 50%;
+    width: 75vh;
 }
 .project-description {
     padding-left: 5vw;

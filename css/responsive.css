@@ -3,20 +3,34 @@
     .side-bar{
         display: none;
     }
+    .panel{
+        height: 100%;
+        border-radius: 0px;
+    }
     .nav li{
         font-family: 'Raleway', sans-serif;
-        font-size: 1em;
+        /*font-size: 1em;*/
         display: block;
         padding: 5px 0px;
         list-style: none;
     }
     .landing-container span {
-        top: 11vw;
-        font-size: 0.8em;
+        top: 13vw;
+        color: #ECEAE7;
+    }
+    .nav a{
+        font-size: 16px;
+        color: #ECEAE7;
+    }
+    .about-container{
+        padding: 20px 30px;
     }
     .inner-circle,
     .outer-circle,
     .last-circle{
+        border: 0.5vw solid #ECEAE7;
+        border-left-color: #630A10;
+        border-top-color: #630A10;
         left: calc(50% - 19vh);
     }
     .inner-circle{
@@ -29,14 +43,65 @@
         height: 35vh;
         margin: 2.5%;
     }
+
     .last-circle{
         width: 38vh;
         height: 38vh;
+    }
+    .about-interest, 
+    .about-education, 
+    .about-experience {
+        display: initial;
+    }
+    .skills-frontEnd, 
+    .skills-backEnd, 
+    .skills-tools, 
+    .skills-design {
+        display: block;
+        width: 100%;
+    }
+    .cover-bar{
+        background-color:#ECEAE7;
+        /*z-index: 100;*/
+    }
+    .project-description{
+        padding: 20px;
+        width: 100%;
+    }
+    .project-pic img{
+        min-width: 80%;
+    }
+    .circle-box{
+        width: 75px;
+        height: 50px;
+        margin: 20px;
+    }
+    .about-description{
+        line-height: 2;
+    }
+    .triangle{
+        border-bottom: 10vw solid #911F27;
+    }
+    .header-container{
+         height: 100vh;
+        background-color: #911F27;
     }
 }
 
 /* Tablets */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /*.title{
+        font-size: 3em;
+    }*/
+    .panel{
+        border-radius: 0px;
+    }
+    /*.header-size{
+        font-size: 2em; 
+    }*/
+    .header-container{
+        background-color: #911F27;
+    }
     .side-bar{
         display: none;
     }
@@ -47,8 +112,12 @@
         padding: 5px 0px;
         list-style: none;
     }
+    .nav a{
+        color: #ECEAE7;
+    }
     .landing-container span {
         top: 12vw;
+        color: #ECEAE7;
     }
     .inner-circle,
     .outer-circle,
@@ -72,6 +141,9 @@
     .about-container{
         padding: 20px 75px;
     }
+    .about-description{
+        line-height: 2.5;
+    }
     .about-interest, 
     .about-education, 
     .about-experience {
@@ -87,6 +159,12 @@
     .project-description{
         padding: 30px 50px;
         width: 100%;
+    }
+    .cover-bar{
+        background-color:#ECEAE7;
+    }
+    .triangle{
+        border-bottom: 10vw solid #911F27;
     }
 
 }
