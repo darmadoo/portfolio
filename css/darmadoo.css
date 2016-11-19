@@ -22,23 +22,48 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  width: 3vw;
+  width: 7vh;
   height: 100vh;
   box-shadow: 0 15px 100px rgba(0, 0, 0, 0.06);
 }
 .side-bar ul{
   width: 100vh;
-  padding-left: 25vh;
   transform: rotate(90deg);
   transform-origin: left top 0;
   position: relative;
-  left: 2vw;
+  left: 8vh;
+}
+.list-h,
+.list-a{
+    width: 18%;
+}
+.list-p,
+.list-c{
+    width: 22%;
+}
+.list-s{
+    width: 20%;
 }
 .side-bar ul li{
+  text-align: center;
   display: inline-block;
-  margin: -1.5vw 3vw 0px 3vw;
   list-style:none;
   transform: rotate(-90deg);
+}
+.filler {
+    visibility: hidden;
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    transition: easeInOutQuint 400ms, opacity 400ms;
+    position: relative;
+}
+.hvr-bubble-float-right:hover .filler{
+    display: inline-block;
+    visibility: visible;
+    width: initial;
+    opacity: 1;
+    transition: easeInOutQuint 800ms, opacity 800ms;
 }
 
 /********** GENERAL ***********/
@@ -52,21 +77,26 @@ body {
     font-size: 5vh;
 }
 .sideBar a.active {
-    text-decoration: line-through;
 }
 .sideBar a {
     padding: 1vw 1vw;
+    color: black;
 }
+.sideBar a:hover{
+    text-decoration: none;
+}
+
 /********** LANDING ***********/
 
 .header-container {
 	height: 100vh;
     position: relative;
     z-index: 4;
-    /*background-repeat: no-repeat;*/
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #911F27), color-stop(100%, #ECEAE7));*/
 }
-.header-wrapper {
+.header-wrapper,
+.about-wrapper,
+.skills-wrapper,
+.projects-wrapper{
     visibility: hidden;
 }
 .nav {
@@ -157,9 +187,6 @@ body {
     -ms-animation-duration: 1s;
     background-color: transparent;
 }
-.about-wrapper {
-    visibility: hidden;
-}
 .about-header {
     position: relative;
     text-align: center;
@@ -188,7 +215,6 @@ body {
     width: 33%;
 }
 .me-photo-border {
-    /*width: 200px;*/
     width: 20vh;
     position: relative;
     box-shadow: 3px 3px 5px 6px #ccc;
@@ -225,9 +251,6 @@ body {
     position: relative;
     z-index: 1;
     height: 100vh;  
-}
-.skills-wrapper {
-    visibility: hidden;
 }
 .skills-header,
 .contact-header,
@@ -271,9 +294,6 @@ body {
     z-index: 1;
     position: relative;
     height: 100vh;
-}
-.projects-wrapper {
-    visibility: hidden;
 }
 .project-tech {
     font-weight: 600;

@@ -34,7 +34,7 @@ $(document).ready(function(){
 	        $.scrollify({
 	            section : ".panel",
 	            interstitialSection : ".footer",
-	            easing: "easeOutExpo",
+	            easing: "easeInOutQuint",
 	            setHeights: false,
 	            scrollbars: false,
 	            before:function(i,panels) {
@@ -53,11 +53,25 @@ $(document).ready(function(){
 			        if(i===0) {
 			          activeClass = "active";
 			        }
-			        if((name != "projects2") && (name != "projects3") &&(name != "projects4") && (name != "landing")){
-			        	pagination += "<li><a class=\"" + activeClass + " header-size\"  href=\"#" 
-			        			   + $(this).attr("data-section-name") + "\">" + name[0].toUpperCase() +"</a></li>";
+			        if((name != "projects2") && (name != "projects3") &&(name != "projects4")){
+			        	var res = name.slice(1,name.length);
+			        	pagination += "<li class=\"list-" + name[0]+ "\"><a class=\"hvr-bubble-float-right " + activeClass + " header-size\"  href=\"#" 
+			        			   + $(this).attr("data-section-name") + "\">" + name[0].toUpperCase() +"<span class='filler'>" 
+			        			   + res + "</span></a></li>";
 			        }
 			        
+			      });
+			      $(".footer").each(function(i) {
+			      	var name = $(this).attr("data-section-name");
+			        activeClass = "";
+			        if(i===0) {
+			          activeClass = "active";
+			        }
+		        	var res = name.slice(1,name.length);
+		        	pagination += "<li class=\"list-" + name[0]+ "\"><a class=\"hvr-bubble-float-right " + activeClass + " header-size\"  href=\"#" 
+		        			   + $(this).attr("data-section-name") + "\">" + name[0].toUpperCase() +"<span class='filler'>" 
+		        			   + res + "</span></a></li>";
+		        
 			      });
 
 			      pagination += "</ul>";
