@@ -166,7 +166,7 @@ $(document).ready(function(){
           	$('#about-start').remove();
           }
 	    },
-	    offset: "30%"
+	    offset: "70%"
 	})
     var projectsWrapper = $('.projects-start').waypoint({
 	    handler: function(direction) {
@@ -192,33 +192,33 @@ $(document).ready(function(){
 	      }
           
 	    },
-	    offset: "30%"
+	    offset: "70%"
 	})
-    var projects2Wrapper = $('.projects-end').waypoint({
+    var projects2Wrapper = $('.projects-wrapper2').waypoint({
 	    handler: function(direction) {
-	    if($(window).width() > 1024){	
-		      $(this.element).addClass("projects-cover", setTimeout(function(){
-		      	$(".projects-wrapper2").css("visibility", "visible");
-		        $(".projects-wrapper2").addClass("animated fadeIn");
-		      }, 1500));
-		      $(".projects-cover-intro").css("visibility", "visible");
-	          $(".projects-cover-intro").addClass("animated flipInX");
-	          $(".projects-arrowTop").css("visibility", "visible");
-	          $(".projects-arrowTop").addClass("arrow1");
-	          $(".projects-arrowBody").css("visibility", "visible");
-	          $(".projects-arrowBody").addClass("arrow2");
-	      }
-	      else{
-	      	$(".projects-wrapper2").css("visibility", "visible");
+	    	$(".projects-wrapper2").css("visibility", "visible");
 	        $(".projects-wrapper2").addClass("animated fadeIn");
-	      }
 	    },
-	    offset: "30%"
+	    offset: "70%"
+	})
+    var projects3Wrapper = $('.projects-wrapper3').waypoint({
+	    handler: function(direction) {
+	    	$(".projects-wrapper3").css("visibility", "visible");
+	        $(".projects-wrapper3").addClass("animated fadeIn");
+	    },
+	    offset: "70%"
+	})
+	var projects4Wrapper = $('.projects-wrapper4').waypoint({
+	    handler: function(direction) {
+	    	$(".projects-wrapper4").css("visibility", "visible");
+	        $(".projects-wrapper4").addClass("animated fadeIn");
+	    },
+	    offset: "70%"
 	})
 
 	var contact = $('.contact-container').waypoint({
 	    handler: function(direction) {
-	      	var git = new Vivus('github', {duration: 100});
+	      	var git = new Vivus('github', {duration: 150});
 		    var linked = new Vivus('linkedIn', {duration: 180});
 		    var email = new Vivus('email', {duration: 200});
 	      },

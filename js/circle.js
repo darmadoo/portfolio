@@ -23,8 +23,6 @@ window.onload = function onLoad() {
       step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
-
-        circle.setText('');
       }
     });
 
@@ -46,8 +44,6 @@ window.onload = function onLoad() {
       step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
-
-        circle.setText('');
       }
     });
 
@@ -69,8 +65,6 @@ window.onload = function onLoad() {
       step: function(state, circle) {
         circle.path.setAttribute('stroke', state.color);
         circle.path.setAttribute('stroke-width', state.width);
-
-        circle.setText('');
       }
     });
 
@@ -118,7 +112,7 @@ window.onload = function onLoad() {
         if($(window).width() > 1024){
           $(this.element).addClass("skills-cover", setTimeout(function(){
               $(".skills-wrapper").css("visibility", "visible");
-              $(".skills-wrapper").addClass("animated fadeInDown", setTimeout(function(){
+              $(".skills-wrapper").addClass("animated fadeIn", setTimeout(function(){
               animateCircle();  
             }, 500));
           }, 1500));
@@ -130,14 +124,12 @@ window.onload = function onLoad() {
           $(".skills-arrowBody").addClass("arrow2");
         }
         else{
-          $(".skills-wrapper").css("visibility", "visible");
-              animateCircle();  
-            //   $(".skills-wrapper").addClass("animated fadeIn", setTimeout(function(){
-              
-            // }, 500));
+          $(".skills-wrapper").css("visibility", "visible"); 
+          $(".skills-wrapper").addClass("animated fadeIn");
+          animateCircle();
         }
       },
-      offset: "30%"
+      offset: "70%"
     })
   
 };
