@@ -34,7 +34,7 @@ $(document).ready(function(){
 	        $.scrollify({
 	            section : ".panel",
 	            interstitialSection : ".footer",
-	            easing: "easeInOutQuint",
+	            easing: "easeOutExpo",
 	            setHeights: false,
 	            scrollbars: false,
 	            before:function(i,panels) {

@@ -256,6 +256,14 @@ body {
 .download-resume:hover{
     cursor: pointer;
 }
+#resume_link{
+    color: #911F27;
+}
+#resume_link:hover{
+    color: #ECEAE7;
+    text-decoration: none;
+    
+}
 .button-container {
     text-align: center;
     padding: 15px;
